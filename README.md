@@ -58,10 +58,10 @@ We envision a future where VaultGrid evolves into a comprehensive asset manageme
 
 ```
 VaultGrid/
-├── contracts/
-│   └── VaultGrid.sol
-├── README.md
-└── package.json (for development setup)
+??? contracts/
+?   ??? VaultGrid.sol
+??? README.md
+??? package.json (for development setup)
 ```
 
 ## Getting Started
@@ -93,16 +93,10 @@ npx hardhat test
 ## Usage Example
 
 ```javascript
-// Create a vault locked for 30 days
-await vaultGrid.createVault(30 * 24 * 60 * 60, { value: ethers.parseEther("1.0") });
-
-// Deposit additional funds
+Deposit additional funds
 await vaultGrid.deposit({ value: ethers.parseEther("0.5") });
 
-// Check vault status
-const [balance, lockTime, isLocked] = await vaultGrid.getVaultInfo();
-
-// Withdraw after lock expires
+Withdraw after lock expires
 await vaultGrid.withdraw(ethers.parseEther("0.5"));
 ```
 
@@ -128,3 +122,6 @@ For questions, contributions, or support, please open an issue on the GitHub rep
 ---
 
 **Disclaimer**: This smart contract is provided as-is for educational and developmental purposes. Always conduct thorough security audits before using in production environments with real assets.
+// 
+update
+// 
